@@ -1,0 +1,313 @@
+:root {
+    --primary-color: #0066ff;
+    --secondary-color: #333;
+    --transition: all 0.3s ease;
+}
+
+/* تحسين القائمة العلوية */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* تحسين السلايدر */
+.carousel-item {
+    position: relative;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+/* تحسين الأزرار */
+.btn {
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,102,255,0.3);
+}
+
+/* تحسين الأقسام */
+.section {
+    padding: 5rem 0;
+}
+
+/* تحسين البطاقات */
+.card {
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* تحسين التأثيرات الحركية */
+.animate__animated {
+    animation-duration: 0.8s;
+}
+
+
+.change-me {
+
+    visibility: hidden;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transition-duration: 1s;
+    overflow: hidden;
+    transition-timing-function: ease;
+
+}
+
+.hover-me:hover .change-me {
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+}
+
+.servic {
+    height: 850px;
+}
+
+.but-fil button {
+    transition: 0.4s;
+}
+
+.but-fil button:hover {
+    color: blue;
+    font-weight: 100;
+}
+
+.hid-div {
+    padding: 2%;
+    visibility: hidden;
+    width: 0;
+    height: 31%;
+    bottom: 10%;
+    left: 10%;
+    opacity: 0;
+    background-color: rgb(83, 83, 231);
+    transition: 0.2s;
+    overflow: hidden;
+    box-shadow: 0px 0px 17px 2px rgb(255, 254, 254);
+}
+
+.div-for-img-filtter:hover .hid-div {
+    visibility: visible;
+    opacity: 0.8;
+    width: 80%;
+}
+
+.div-for-img-filtter img {
+    transition: 0.5s;
+}
+
+.div-for-img-filtter:hover img {
+    box-shadow: 0px 0px 17px 1px rgb(117, 116, 116);
+}
+
+
+.icon-center i {
+    margin-top: 45%;
+}
+
+.c-parent {
+    overflow: hidden;
+}
+
+.c-parent .contant-image {
+    left: 10%;
+    bottom: -26%;
+    transition: 1S;
+
+}
+
+.c-parent hr {
+    border: 0.2rem solid black;
+    transition: 0.5s;
+}
+
+/* after hover */
+.c-parent:hover .contant-image {
+    bottom: 0%;
+}
+
+.c-parent:hover hr {
+    display: none;
+}
+
+.contant-image i:hover {
+    color: rgb(1, 1, 145);
+}
+
+.image-tcard {
+    overflow: hidden;
+}
+
+.card-trans hr {
+    width: 35%;
+    transition: 0.5s;
+}
+
+.card-trans:hover hr {
+    width: 100%;
+}
+
+.card-trans img {
+    transition: 1s;
+
+}
+
+.card-trans:hover img {
+    transform: rotate(10deg) scale(1.24);
+}
+
+.bg-black {
+    transition: 0.5s;
+}
+
+.card-trans:hover .bg-black {
+    background-color: rgb(32, 32, 243) !important;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+hr {
+    opacity: 0.85 !important;
+}
+
+.list-button a {
+    transition: 0.6s;
+    border: none;
+}
+
+.list-button a:hover {
+    background-color: blue !important;
+    color: white !important;
+}
+
+.shadow-custem {
+
+    box-shadow: 1px 1px 10px 10px #171717 !important;
+}
+.cont-back{
+    background-image: url(../image/Carousel4.png);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+}
+.owl-nav{
+    text-align: center;
+}
+
+
+/* Enhanced Carousel Styling */
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item img {
+    filter: brightness(0.9);
+    transition: transform 0.3s ease;
+}
+
+.carousel-caption {
+    z-index: 2;
+}
+
+/* Enhanced Button Styling */
+.btn {
+    transition: all 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.btn-lg {
+    padding: 12px 30px;
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #2196F3, #1976D2);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #1976D2, #1565C0);
+    box-shadow: 0 5px 15px rgba(33, 150, 243, 0.4);
+}
+
+.btn-outline-light:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Animation Enhancements */
+.animate__animated {
+    animation-duration: 0.8s;
+}
+
+.animate__delay-1s {
+    animation-delay: 0.3s;
+}
+
+.animate__delay-2s {
+    animation-delay: 0.6s;
+}
+
+/* Text Enhancements */
+.display-2 {
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.lead {
+    font-weight: 400;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
